@@ -131,7 +131,7 @@ for idx = 1:length(SNRdBs)
     BER_qpsk(idx) = err_count / (total_bits_qpsk * N_Packets);
 end
 
-semilogy(SNRdBs, BER_qpsk, 'g-^', 'LineWidth', 2);  % QPSK curve in black dashed line with triangle markers
+semilogy(SNRdBs, BER_qpsk, 'g-^', 'LineWidth', 2);  % QPSK curve
 
 legend('Alamouti (2x1)', 'Alamouti (2x2)', 'QPSK (1x1)')
 xlabel('SNR (dB)');
