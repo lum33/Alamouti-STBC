@@ -1,5 +1,6 @@
-% main_comparison.m
+%% main_comparison.m
 % Compare 1x1, 2x1, 2x2 Alamouti STBC (QPSK) 
+clear; clc;
 %% Parameter
 L_frame = 130;                  % Number of Alamouti blocks/packet (each block carries 2 symbols)
 N_Packets = 10000;               % Number of packets
@@ -135,4 +136,4 @@ xlabel('SNR (dB)');
 ylabel('Bit Error Rate');
 %axis([SNRdBs([1 end]) 1e-6 1e0]);
 title('BER vs SNR with QPSK');
-saveas(figure(1),'BER_comparison_V1.jpg')
+saveas(figure(1),'BER_comparison_V2.jpg')
